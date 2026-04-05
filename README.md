@@ -61,6 +61,16 @@ Recursively divides the list in half until each sublist has a single element, th
 
 ---
 
+## *A note on stability
+
+A sorting algorithm is considered **stable** if it preserves the original relative order of elements that compare as equal.
+
+This only matters when sorting objects by one of their fields — for example, a list of people sorted by age. If two people share the same age, a stable algorithm guarantees they will appear in the same order they did in the original list. An unstable algorithm may swap them arbitrarily.
+
+For simple lists of numbers (like the examples in this repo), stability has no visible effect since equal values are indistinguishable.
+
+---
+
 ## Complexity Summary
 
 | Algorithm      | Best     | Average  | Worst    | Space    | Stable |
@@ -68,8 +78,10 @@ Recursively divides the list in half until each sublist has a single element, th
 | Bubble Sort    | O(n)     | O(n²)    | O(n²)    | O(1)     | ✅     |
 | Selection Sort | O(n²)    | O(n²)    | O(n²)    | O(1)     | ❌     |
 | Insertion Sort | O(n)     | O(n²)    | O(n²)    | O(1)     | ✅     |
-| Quick Sort     | O(n log n) | O(n log n) | O(n²) | O(log n) | ❌    |
-| Merge Sort     | O(n log n) | O(n log n) | O(n log n) | O(n) | ✅   |
+| Quick Sort     | O(n log n) | O(n log n) | O(n²) | O(log n) | ❌     |
+| Merge Sort     | O(n log n) | O(n log n) | O(n log n) | O(n) | ✅  |
+
+---
 
 ## Planned Additions
 
