@@ -61,7 +61,7 @@ Recursively divides the list in half until each sublist has a single element, th
 
 ---
 
-## *A note on stability
+## A note on stability
 
 A sorting algorithm is considered **stable** if it preserves the original relative order of elements that compare as equal.
 
