@@ -6,7 +6,7 @@ A collection of classic sorting algorithms implemented in Python. This repositor
 
 ## Algorithms
 
-###  Bubble Sort — `bubblesort.py`
+###  Bubble Sort — `Bubblesort.py`
 
 Repeatedly compares adjacent elements and swaps them if they are out of order. The largest unsorted element "bubbles up" to its correct position on each pass.
 
