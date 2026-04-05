@@ -8,7 +8,7 @@ def quick(A):
 
     # --- Partition step ---
     # Rearrange elements so that everything less than the pivot comes before it
-    i = -1  # Index of the last element confirmed to be less than pivot
+    i = -1  # Starter index for the last element confirmed to be less than pivot
     for j in range(len(A) - 1):
         if A[j] < pivot:
             i += 1
