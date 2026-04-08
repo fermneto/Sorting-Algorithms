@@ -1,12 +1,12 @@
-#  Sorting Algorithms
+# 📊 Sorting Algorithms
 
-A collection of classic sorting algorithms implemented in Python. This repository serves as a study reference, with clear and readable implementations for each algorithm.
+A collection of classic sorting algorithms implemented in Python and C++. This repository serves as a study reference, with clear and readable implementations for each algorithm.
 
 ---
 
 ## Algorithms
 
-###  Bubble Sort — `bubblesort.py`
+###  Bubble Sort — `bubblesort.py` | `bubblesort.cpp`
 
 Repeatedly compares adjacent elements and swaps them if they are out of order. The largest unsorted element "bubbles up" to its correct position on each pass.
 
@@ -17,9 +17,9 @@ Repeatedly compares adjacent elements and swaps them if they are out of order. T
 
 ---
 
-###  Selection Sort — `selectionsort.py`
+###  Selection Sort — `selectionsort.py` | `selectionsort.cpp`
 
-Divides the list into a sorted and an unsorted portion. On each iteration, finds the smallest element in the unsorted portion and places it at the end of the sorted portion.
+Divides the list into a sorted and an unsorted portion. On each iteration, finds the smallest element in the unsorted portion and places it at the start of the unsorted portion.
 
 - **Time complexity:** O(n²) in all cases
 - **Space complexity:** O(1)
@@ -28,7 +28,7 @@ Divides the list into a sorted and an unsorted portion. On each iteration, finds
 
 ---
 
-###  Insertion Sort — `insertionsort.py`
+###  Insertion Sort — `insertionsort.py` | `insertionsort.cpp`
 
 Builds the sorted list one element at a time. For each new element, it shifts larger elements to the right until the correct position is found and inserts the element there.
 
@@ -73,13 +73,43 @@ For simple lists of numbers (like the examples in this repo), stability has no v
 
 ## Complexity Summary
 
-| Algorithm      | Best     | Average  | Worst    | Space    | Stable |
-|----------------|----------|----------|----------|----------|--------|
-| Bubble Sort    | O(n)     | O(n²)    | O(n²)    | O(1)     | ✅     |
-| Selection Sort | O(n²)    | O(n²)    | O(n²)    | O(1)     | ❌     |
-| Insertion Sort | O(n)     | O(n²)    | O(n²)    | O(1)     | ✅     |
-| Quick Sort     | O(n log n) | O(n log n) | O(n²) | O(log n) | ❌     |
-| Merge Sort     | O(n log n) | O(n log n) | O(n log n) | O(n) | ✅  |
+| Algorithm      | Best       | Average    | Worst      | Space    | Stable |
+|----------------|------------|------------|------------|----------|--------|
+| Bubble Sort    | O(n)       | O(n²)      | O(n²)      | O(1)     | ✅     |
+| Selection Sort | O(n²)      | O(n²)      | O(n²)      | O(1)     | ❌     |
+| Insertion Sort | O(n)       | O(n²)      | O(n²)      | O(1)     | ✅     |
+| Quick Sort     | O(n log n) | O(n log n) | O(n²)      | O(log n) | ❌     |
+| Merge Sort     | O(n log n) | O(n log n) | O(n log n) | O(n)     | ✅     |
+
+---
+
+## Requirements
+
+**Python**
+- Python 3.x
+- No external dependencies
+
+**C++**
+- C++11 or later
+- Any standard compiler (g++, clang++, MSVC)
+
+## Usage
+
+**Python**
+```bash
+python bubblesort.py
+python selectionsort.py
+python insertionsort.py
+python quicksort.py
+python mergesort.py
+```
+
+**C++**
+```bash
+g++ bubblesort.cpp -o bubblesort && ./bubblesort
+g++ selectionsort.cpp -o selectionsort && ./selectionsort
+g++ insertionsort.cpp -o insertionsort && ./insertionsort
+```
 
 ---
 
