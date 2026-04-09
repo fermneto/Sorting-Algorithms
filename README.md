@@ -83,36 +83,6 @@ For simple lists of numbers (like the examples in this repo), stability has no v
 
 ---
 
-## Requirements
-
-**Python**
-- Python 3.x
-- No external dependencies
-
-**C++**
-- C++11 or later
-- Any standard compiler (g++, clang++, MSVC)
-
-## Usage
-
-**Python**
-```bash
-python bubblesort.py
-python selectionsort.py
-python insertionsort.py
-python quicksort.py
-python mergesort.py
-```
-
-**C++**
-```bash
-g++ bubblesort.cpp -o bubblesort && ./bubblesort
-g++ selectionsort.cpp -o selectionsort && ./selectionsort
-g++ insertionsort.cpp -o insertionsort && ./insertionsort
-```
-
----
-
 ## Planned Additions
 
 - Heap Sort
